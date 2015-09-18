@@ -1,3 +1,58 @@
 // Place all the styles related to the root controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.root-page-header-container {
+  .root-header-image {
+    background-image: image-url('computer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+  }
+
+  .navbar {
+    height: 5rem;
+    display: flex;
+    width: 100%;
+    position: absolute;
+
+    .navbar-nav {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      a {
+        height: 100%;
+        color: gray;
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .header-text {
+    color: white;
+    position: absolute;
+    left: 25rem;
+    top: 12rem;
+    text-transform: uppercase;
+  }
+}
+
+.root-page-body-container {
+  padding: 0 20%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.home-page-footer {
+  border-top: 2px solid silver;
+}
