@@ -17,6 +17,7 @@
     display: flex;
     width: 100%;
     position: absolute;
+    padding: 0 20%;
 
     .navbar-nav {
       display: flex;
@@ -46,9 +47,14 @@
         align-self: center;
       }
 
+      .mega-octicon {
+        font-size: 24px;
+      }
+
       .fa-linkedin {
-        font-size: 32px;
+        font-size: 24px;
         align-self: center;
+        padding-right: 0;
       }
     }
   }
@@ -135,6 +141,7 @@
 
 .home-page-footer {
   border-top: 2px solid silver;
+  margin: 0 20%;
 
   ul {
     display: flex;
@@ -157,8 +164,12 @@
     display: flex;
   }
 
+  .mega-octicon {
+    font-size: 24px;
+  }
+
   .fa-linkedin {
-    font-size: 32px;
+    font-size: 24px;
     align-self: center;
   }
 
