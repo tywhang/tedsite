@@ -32,8 +32,23 @@
       }
 
       img {
-        height: 20rem;
-        width: auto;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      li {
+        display: flex;
+      }
+
+      span {
+        display: flex;
+        align-self: center;
+      }
+
+      .fa-linkedin {
+        font-size: 32px;
+        align-self: center;
       }
     }
   }
@@ -120,12 +135,35 @@
 
 .home-page-footer {
   border-top: 2px solid silver;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      display: flex;
+      color: gray;
+      padding: 15px;
+      align-self: center;
+    }
+  }
+
+  a {
+    height: 100%;
+    color: gray;
+    display: flex;
+  }
+
+  .fa-linkedin {
+    font-size: 32px;
+    align-self: center;
+  }
 
   .footer-name {
     justify-content: flex-end;
-    margin: 16px;
+    margin: 0;
   }
 }
