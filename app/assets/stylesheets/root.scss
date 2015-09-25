@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.icons {
+  font-size: 24px;
+}
+
+.scroll-nav-bar {
+  background-color: white;
+}
 
 .header-container {
   position: relative;
@@ -18,7 +25,7 @@
     display: flex;
     width: 100%;
     position: fixed;
-    padding: 0 20%;
+    z-index: 9999;
 
     .navbar-nav {
       display: flex;
@@ -27,6 +34,7 @@
       justify-content: flex-end;
       text-transform: uppercase;
       font-weight: bold;
+      margin: 0 20%;
 
       a {
         height: 100%;
@@ -46,16 +54,6 @@
       span {
         display: flex;
         align-self: center;
-      }
-
-      .mega-octicon {
-        font-size: 24px;
-      }
-
-      .fa-linkedin {
-        font-size: 24px;
-        align-self: center;
-        padding-right: 0;
       }
     }
   }
@@ -195,15 +193,6 @@
     height: 100%;
     color: gray;
     display: flex;
-  }
-
-  .mega-octicon {
-    font-size: 24px;
-  }
-
-  .fa-linkedin {
-    font-size: 24px;
-    align-self: center;
   }
 
   .footer-name {
