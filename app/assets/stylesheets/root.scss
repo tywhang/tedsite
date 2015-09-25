@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .header-container {
   position: relative;
 
@@ -16,7 +17,7 @@
     height: 5rem;
     display: flex;
     width: 100%;
-    position: absolute;
+    position: fixed;
     padding: 0 20%;
 
     .navbar-nav {
@@ -62,7 +63,7 @@
   .header-text {
     color: white;
     position: absolute;
-    left: 25rem;
+    left: 20%;
     top: 12rem;
     text-transform: uppercase;
   }
@@ -80,25 +81,31 @@
 .developer-body-container {
   position: relative;
 
-  img {
-    height: 40rem;
-    width: 100%;
+  .developer-image {
+    background-image: image-url('code.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
   }
 
   .header-text {
     color: white;
     text-shadow: 2px 2px black;
     position: absolute;
-    top: 15rem;
+    top: 22.5rem;
     left: 40%;
     width: 20%;
     text-align: center;
     text-transform: uppercase;
   }
 
-  .language-section {
-    display: flex;
-    flex-direction: row;
+  .language-section-container {
+    margin-top: 5rem;
+
+    .language-section {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   h3 {
@@ -118,16 +125,19 @@
 .blogger-body-container {
   position: relative;
 
-  img {
-    height: 40rem;
-    width: 100%;
+  .blogger-image {
+    background-image: image-url('notepad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    width: 100%
   }
 
   .header-text {
     color: white;
     text-shadow: 2px 2px black;
     position: absolute;
-    top: 15rem;
+    top: 22.5rem;
     left: 40%;
     width: 20%;
     text-align: center;
@@ -138,16 +148,18 @@
 .yogi-body-container {
   position: relative;
 
-  img {
-    height: 40rem;
-    width: 100%;
+  .yogi-image {
+    background-image: image-url('girlonwater.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
   }
 
   .header-text {
     color: white;
     text-shadow: 2px 2px black;
     position: absolute;
-    top: 15rem;
+    top: 22.5rem;
     left: 40%;
     width: 20%;
     text-align: center;
@@ -157,6 +169,7 @@
 
 .body-inner-container {
   margin: 5rem 20%;
+  text-align: justify;
 }
 
 .home-page-footer {
