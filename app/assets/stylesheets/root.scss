@@ -3,10 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $mobile-width: 480px;
-$tablet-width: 640px;
-$desktop-width: 960px;
-$large-desktop-width: 1280px;
-
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
 
 .icons {
   font-size: 24px;
@@ -115,24 +114,37 @@ $large-desktop-width: 1280px;
 
   .language-section-container {
     margin-top: 5rem;
+    align-items: center;
 
-    .language-section {
+    .language-icons-container {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+
+      @media screen and (min-width: $tablet-width) {
+        justify-content: flex-start;
+      }
     }
-  }
 
-  h3 {
-    align-self: center;
-    justify-content: flex-end;
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+    h3 {
+      justify-content: center;
+      display: flex;
+      margin-top: 3rem;
 
-  i {
-    display: flex;
-    font-size: 70px;
+      @media screen and (min-width: $tablet-width) {
+        justify-content: flex-start;
+        margin: 0;
+      }
+    }
+
+    i {
+      display: flex;
+      font-size: 6rem;
+
+      @media screen and (min-width: $tablet-width) {
+        font-size: 7rem;
+      }
+    }
   }
 }
 
