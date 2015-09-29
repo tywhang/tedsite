@@ -2,18 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$mobile-width: 480px;
+$tablet-width: 640px;
+$desktop-width: 960px;
+$large-desktop-width: 1280px;
+
+
 .icons {
   font-size: 24px;
+}
+
+.header-text {
+  color: white;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  top: 22.5rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header-container {
   position: relative;
 
   .header-image {
-    background-image: image-url('computer.jpeg');
+    background-image: image-url('computer_mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 50rem;
+
+    @media screen and (min-width: $mobile-width) {
+      background-image: image-url('computer.jpg');
+    }
   }
 
   .navbar {
@@ -54,14 +74,6 @@
       }
     }
   }
-
-  .header-text {
-    color: white;
-    position: absolute;
-    left: 20%;
-    top: 12rem;
-    text-transform: uppercase;
-  }
 }
 
 .header-body-container {
@@ -77,22 +89,17 @@
   position: relative;
 
   .developer-image {
-    background-image: image-url('code.jpg');
+    background-image: image-url('code_mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 50rem;
+
+    @media screen and (min-width: $mobile-width) {
+      background-image: image-url('code.jpg');
+    }
   }
 
-  .header-text {
-    color: white;
-    text-shadow: 2px 2px black;
-    position: absolute;
-    top: 22.5rem;
-    left: 40%;
-    width: 20%;
-    text-align: center;
-    text-transform: uppercase;
-  }
+  
 
   .language-section-container {
     margin-top: 5rem;
@@ -121,22 +128,15 @@
   position: relative;
 
   .blogger-image {
-    background-image: image-url('notepad.jpg');
+    background-image: image-url('notepad_mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 50rem;
-    width: 100%
-  }
+    width: 100%;
 
-  .header-text {
-    color: white;
-    text-shadow: 2px 2px black;
-    position: absolute;
-    top: 22.5rem;
-    left: 40%;
-    width: 20%;
-    text-align: center;
-    text-transform: uppercase;
+    @media screen and (min-width: $mobile-width) {
+      background-image: image-url('notepad.jpg');
+    }
   }
 }
 
@@ -144,21 +144,14 @@
   position: relative;
 
   .yogi-image {
-    background-image: image-url('girlonwater.jpg');
+    background-image: image-url('girlonwater_mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 50rem;
-  }
 
-  .header-text {
-    color: white;
-    text-shadow: 2px 2px black;
-    position: absolute;
-    top: 22.5rem;
-    left: 40%;
-    width: 20%;
-    text-align: center;
-    text-transform: uppercase;
+    @media screen and (min-width: $mobile-width) {
+      background-image: image-url('girlonwater.jpg');
+    }
   }
 }
 
