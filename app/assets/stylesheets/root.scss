@@ -16,10 +16,20 @@ $large-desktop-width: 1280px;
   color: white;
   text-shadow: 2px 2px black;
   position: absolute;
-  top: 22.5rem;
+  top: 12rem;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop-width) {
+    top: 14rem;
+  }
+}
+
+.body-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
 }
 
 .header-container {
@@ -31,7 +41,7 @@ $large-desktop-width: 1280px;
     background-repeat: no-repeat;
     height: 50rem;
 
-    @media screen and (min-width: $mobile-width) {
+    @media screen and (min-width: $tablet-width) {
       background-image: image-url('computer.jpg');
     }
   }
@@ -77,8 +87,13 @@ $large-desktop-width: 1280px;
 }
 
 .header-body-container {
-  padding: 0 20%;
+  padding: 0 5%;
   padding-bottom: 5rem;
+
+  @media screen and (min-width: $mobile-width) {
+    padding: 0 20%;
+    padding-bottom: 5rem;
+  }
 
   img {
     width: 100%;
@@ -90,9 +105,6 @@ $large-desktop-width: 1280px;
 
   .developer-image {
     background-image: image-url('code_mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50rem;
 
     @media screen and (min-width: $mobile-width) {
       background-image: image-url('code.jpg');
@@ -129,9 +141,6 @@ $large-desktop-width: 1280px;
 
   .blogger-image {
     background-image: image-url('notepad_mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50rem;
     width: 100%;
 
     @media screen and (min-width: $mobile-width) {
@@ -145,9 +154,6 @@ $large-desktop-width: 1280px;
 
   .yogi-image {
     background-image: image-url('girlonwater_mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50rem;
 
     @media screen and (min-width: $mobile-width) {
       background-image: image-url('girlonwater.jpg');
@@ -156,7 +162,11 @@ $large-desktop-width: 1280px;
 }
 
 .body-inner-container {
-  margin: 5rem 20%;
+  margin: 5rem 5%;
+  @media screen and (min-width: $mobile-width) {
+    margin: 5rem 20%;
+  }
+  
   text-align: justify;
 }
 
