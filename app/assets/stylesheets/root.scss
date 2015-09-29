@@ -113,8 +113,12 @@ $large-desktop-width: 1200px;
   
 
   .language-section-container {
-    margin-top: 5rem;
+    margin-top: 0;
     align-items: center;
+
+    @media screen and (min-width: $tablet-width) {
+      margin-top: 5rem;
+    }
 
     .language-icons-container {
       display: flex;
@@ -139,9 +143,14 @@ $large-desktop-width: 1200px;
 
     i {
       display: flex;
-      font-size: 6rem;
+      font-size: 5rem;
+      margin: 0 0.25rem;
 
       @media screen and (min-width: $tablet-width) {
+        font-size: 6rem;
+      }
+
+      @media screen and (min-width: $desktop-width) {
         font-size: 7rem;
       }
     }
@@ -184,7 +193,11 @@ $large-desktop-width: 1200px;
 
 .home-page-footer {
   border-top: 2px solid silver;
-  margin: 0 20%;
+  margin: 0 5%;
+
+  @media screen and (min-width: $mobile-width) {
+    margin: 0 20%;
+  }
 
   ul {
     display: flex;
