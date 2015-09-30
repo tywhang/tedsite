@@ -45,6 +45,16 @@ $large-desktop-width: 1200px;
     }
   }
 
+  .header-text {
+    top: 9rem;
+    padding: 0 5%;
+    text-align: left;
+
+    @media screen and (min-width: $mobile-width) {
+      padding: 0 20%;
+    }
+  }
+
   .navbar {
     height: 5rem;
     display: flex;
@@ -60,7 +70,11 @@ $large-desktop-width: 1200px;
       justify-content: flex-end;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 0 20%;
+      margin: 0 5%;
+
+      @media screen and (min-width: $mobile-width) {
+        margin: 0 20%;
+      }
 
       a {
         height: 100%;
