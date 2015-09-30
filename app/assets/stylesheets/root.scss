@@ -7,6 +7,17 @@ $tablet-width: 768px;
 $desktop-width: 992px;
 $large-desktop-width: 1200px;
 
+.show-modal-button {
+  position: fixed;
+  bottom: 1%;
+  left: 5%;
+
+  @media screen and (min-width: $tablet-width) {
+    left: 20%;
+  }
+}
+
+
 .icons {
   font-size: 24px;
 }
