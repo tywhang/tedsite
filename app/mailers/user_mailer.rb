@@ -1,11 +1,16 @@
 class UserMailer < ApplicationMailer
-  default from: 'notifications@example.com', subject: 'Welcome to My Awesome Site'
+  default from: 'notifications@example.com'
  
-  def contact_me(subject, body, sender_email)
-    @subject = subject
-    @body = body
+  def contact_me(sender_name, sender_email, body)
+    @sender_name
     @sender_email = sender_email
+    @body = body
+    
     @url  = 'http://example.com/login'
-    mail(to: "twhang.dev@gmail.com", subject: subject, from: @sender_email)
+    mail(
+      to: "twhang.dev@gmail.com",
+      from: @sender_email,
+      subject: 'Welcome to My Awesome Site'
+    )
   end
 end

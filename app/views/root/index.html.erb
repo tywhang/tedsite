@@ -115,6 +115,9 @@
   </div>
 </div>
 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-me-form">
+  Contact me!
+</button>
 <footer class="home-page-footer">
   <ul>
     <li><a href="https://github.com/tywhang" class="mega-octicon octicon-mark-github icons"></a></li>
@@ -122,3 +125,23 @@
     <li><p class="footer-name">&#174; 2015 Ted Whang</p></li>
   </ul>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="contact-me-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact me!</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control js-sender-name" placeholder="Name">
+        <input type="text" class="form-control js-sender-email" placeholder="user@example.com">
+        <textarea class="form-control js-email-body" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary js-send-email">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
