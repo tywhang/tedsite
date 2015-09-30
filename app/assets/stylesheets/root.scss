@@ -67,7 +67,8 @@ $large-desktop-width: 1200px;
       display: flex;
       width: 100%;
       flex-direction: row;
-      justify-content: flex-end;
+      justify-content: stretch;
+      flex-wrap: wrap;
       text-transform: uppercase;
       font-weight: bold;
       margin: 0 5%;
@@ -76,9 +77,20 @@ $large-desktop-width: 1200px;
         margin: 0 20%;
       }
 
+      .home-link {
+        flex: 1;
+      }
+
       a {
-        height: 100%;
+        align-self: center;
+        font-size: 10px;
         color: gray;
+        padding: 0 6px;
+
+        @media screen and (min-width: $mobile-width) {
+          font-size: 14px;
+          height: 100%;
+        }
       }
 
       img {
