@@ -7,6 +7,21 @@ $tablet-width: 768px;
 $desktop-width: 992px;
 $large-desktop-width: 1200px;
 
+.error {
+  color: red;
+  margin: 0;
+  margin-left: 4px;
+  position: absolute;
+}
+
+.sender-email, .email-body {
+  margin-top: 20px;
+}
+
+.modal-body {
+  padding-bottom: 24px;
+}
+
 .show-modal-button {
   position: fixed;
   bottom: 1%;
