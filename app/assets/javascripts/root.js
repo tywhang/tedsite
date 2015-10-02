@@ -14,7 +14,6 @@ $(document).ready(function() {
         body: body
       }
     }).success(function() {
-      debugger;
       jQuery.noConflict();
       $('#contact-me-form').modal('hide');
     });
