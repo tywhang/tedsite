@@ -16,8 +16,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <nav class="navbar">
+    <ul class="nav navbar-nav">
+      <li class="home-link"><a href="#">Ted Whang</a></li>
+      <li><a href="#developer">Developer</a></li>
+      <li><a href="#blogger">Blogger</a></li>
+      <li><a href="#yogi">Yogi</a></li>
+      <li><a href="https://github.com/tywhang" class="mega-octicon octicon-mark-github icons"></a></li>
+      <li><a href="https://www.linkedin.com/in/tedwhang" class="fa fa-linkedin icons"></a></li>
+    </ul>
+  </nav>
 <%= yield %>
+
+<footer class="home-page-footer">
+  <ul>
+    <li><a href="https://github.com/tywhang" class="mega-octicon octicon-mark-github icons"></a></li>
+    <li><a href="https://www.linkedin.com/in/tedwhang" class="fa fa-linkedin icons"></a></li>
+    <li><p class="footer-name">&#174; 2015 Ted Whang</p></li>
+  </ul>
+</footer>
 
 <% if Rails.env.production? %>
 <script>

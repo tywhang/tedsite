@@ -2,6 +2,9 @@ class RootController < ApplicationController
   def index
   end
 
+  def coding_dojo_blog
+  end
+
   def contact_me
     sender_name = params[:sender_name]
     sender_email = params[:sender_email]
