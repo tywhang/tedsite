@@ -19,17 +19,19 @@
   <div class="navbar-container">
     <nav class="navbar">
       <ul class="nav navbar-nav">
-        <li class="home-link"><a href="#">Ted Whang</a></li>
-        <li><a href="#developer">Developer</a></li>
-        <li><a href="#blogger">Blogger</a></li>
-        <li><a href="#yogi">Yogi</a></li>
+        <li class="home-link"><a href="/">Ted Whang</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/resume">RESUME</a></li>
+        <li><a href="/blog">BLOG</a></li>
+        <li><a href="/contact">CONTACT</a></li>
         <li><a href="https://github.com/tywhang" class="mega-octicon octicon-mark-github icons"></a></li>
         <li><a href="https://www.linkedin.com/in/tedwhang" class="fa fa-linkedin icons"></a></li>
       </ul>
     </nav>
   </div>
-<%= yield %>
-
+  <div id="content">
+    <%= yield %>
+  </div>
 <footer class="home-page-footer">
   <ul>
     <li><a href="https://github.com/tywhang" class="mega-octicon octicon-mark-github icons"></a></li>

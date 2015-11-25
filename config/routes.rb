@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'root#index'
 
-  get 'coding_dojo_blog' => 'root#coding_dojo_blog'
+  get '/about' => 'root#about'
+  get '/resume' => 'root#resume'
+  get '/blog' => 'root#blog'
+  get '/contact' => 'root#contact'
   post 'root/contact_me' => 'root#contact_me'
 
   # Example of regular route:
