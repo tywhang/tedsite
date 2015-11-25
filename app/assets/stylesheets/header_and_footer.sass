@@ -1,0 +1,83 @@
+$mobile-width: 480px
+$tablet-width: 768px
+$desktop-width: 992px
+$large-desktop-width: 1200px
+
+.navbar-container
+  position: fixed
+  z-index: 9999
+
+.navbar
+  height: 5rem
+  display: flex
+  width: 100%
+  position: fixed
+  background-color: transparent
+  top: 0
+
+  .navbar-nav
+    display: flex
+    width: 100%
+    flex-direction: row
+    justify-content: stretch
+    flex-wrap: wrap
+    font-weight: bold
+    margin: 0 5%
+
+    @media screen and (min-width: $tablet-width)
+      margin: 0 20%
+
+    .home-link
+      flex: 1
+
+    a
+      align-self: center
+      font-size: 10px
+      color: white
+      padding: 0 6px
+      font-weight: 100
+
+      @media screen and (min-width: $mobile-width)
+        font-size: 14px
+        height: 100%
+
+    img
+      display: block
+      height: 100%
+      width: 100%
+
+    li
+      display: flex
+
+    span
+      display: flex
+      align-self: center
+
+.home-page-footer
+  border-top: 2px solid silver
+  margin: 0 5%
+
+  @media screen and (min-width: $tablet-width)
+    margin: 0 20%
+
+  ul
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    list-style-type: none
+    margin: 0
+
+    li
+      display: flex
+      color: black
+      padding: 15px
+      align-self: center
+
+  a
+    height: 100%
+    color: black
+    display: flex
+
+  .footer-name
+    justify-content: flex-end
+    margin: 0
