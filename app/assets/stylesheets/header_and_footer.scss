@@ -36,7 +36,7 @@ $large-desktop-width: 1200px;
     a {
       align-self: center;
       font-size: 10px;
-      color: gray;
+      color: black;
       padding: 0 6px;
 
       @media screen and (min-width: $mobile-width) {
@@ -79,7 +79,7 @@ $large-desktop-width: 1200px;
 
     li {
       display: flex;
-      color: gray;
+      color: black;
       padding: 15px;
       align-self: center;
     }
@@ -87,7 +87,7 @@ $large-desktop-width: 1200px;
 
   a {
     height: 100%;
-    color: gray;
+    color: black;
     display: flex;
   }
 
