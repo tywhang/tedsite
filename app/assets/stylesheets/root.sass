@@ -12,12 +12,14 @@ $large-desktop-width: 1200px
 
 .header-text
   color: white
-  text-shadow: 2px 2px black
   position: absolute
   top: 12rem
   width: 100%
   text-align: center
   text-transform: uppercase
+
+  .white-overlay &
+    color: black
 
   @media screen and (min-width: $desktop-width)
     top: 14rem
@@ -37,8 +39,6 @@ $large-desktop-width: 1200px
     bottom: 0
     left: 0
     right: 0
-    background: black
-    opacity: 0.7
 
   .header-text
     text-align: center
@@ -46,8 +46,17 @@ $large-desktop-width: 1200px
     @media screen and (min-width: $tablet-width)
       padding: 0 20%
 
+    &.root-header
+      text-align: left
+      margin-left: 10%
+
 .body-container
   margin: 5rem 5%
   text-align: justify
   @media screen and (min-width: $tablet-width)
-    margin: 5rem 20%
+    margin: 5rem 25%
+
+.black-overlay
+  &::before
+    background: black
+    opacity: 0.7
