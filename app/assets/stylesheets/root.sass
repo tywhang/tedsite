@@ -2,24 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "variables/colors"
 $mobile-width: 480px
 $tablet-width: 768px
 $desktop-width: 992px
 $large-desktop-width: 1200px
 
+*
+  color: black
+
+
 .icons
   font-size: 24px
 
 .header-text
-  color: white
+  color: $white
   position: absolute
   top: 12rem
   width: 100%
   text-align: center
   text-transform: uppercase
-
-  .white-overlay &
-    color: black
 
   @media screen and (min-width: $desktop-width)
     top: 14rem
@@ -58,5 +60,5 @@ $large-desktop-width: 1200px
 
 .black-overlay
   &::before
-    background: black
+    background: $black
     opacity: 0.7
