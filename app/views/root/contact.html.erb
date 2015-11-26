@@ -1,8 +1,30 @@
-<div class="header-container black-overlay">
-  <img src="<%= image_url('contact.jpg') %>" alt="" class="header-image">
-  <div class="header-text">
-    <h2>CONTACT</h2>
+<div class="contact-container">
+  <div class="header-container black-overlay">
+    <img src="<%= image_url('contact.jpg') %>" alt="" class="header-image">
+    <div class="header-text">
+      <h2>CONTACT</h2>
+    </div>
   </div>
-</div>
-<div class="body-container">
+  <div class="body-container row">
+    <div class="col-sm-6 form-container">
+      <form action="/root/contact_me">
+        <label for="sender_name">Name</label>
+        <input type="text" name="sender_name" id="sender_name">
+        <label for="sender_email">Email</label>
+        <input type="text" name="sender_email" id="sender_email">
+        <label for="body">Message</label>
+        <textarea name="body" cols="30" rows="10" id="body"></textarea>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <p><strong>Ted Whang</strong></p>
+          <p>twhang.dev@gmail.com</p>
+          <p>Currently in Seattle, WA</p>
+        </div>
+        <img src="<%= image_url('seattle.jpg') %>" alt="">
+      </div>
+    </div>
+  </div>
 </div>
