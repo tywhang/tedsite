@@ -3,23 +3,39 @@
 
 .contact-container
   .form-container
-    border-right: 1px solid $gray
-
+    padding-bottom: 48px
     form
-      width: 80%
+      width: 100%
+      @media screen and (min-width: $tablet-width)
+        width: 80%
 
   input, textarea
     width: 100%
-
-  label
-    margin-top: 8px
+    border-radius: 0
+    border-color: $gray
 
 .contact-info-container
-  margin: 0 auto
-  width: 80%
+  border: none
+
+  @media screen and (min-width: $tablet-width)
+    border-left: 1px solid $gray
+
+  .contact-inner-container
+    margin: 0 auto
+    width: 100%
+    text-align: center
+
+    @media screen and (min-width: $tablet-width)
+      width: 80%
+      text-align: left
 
   .contact-info
     margin-bottom: 16px
+    padding-top: 48px
+    border-top: 1px solid $gray
+    @media screen and (min-width: $tablet-width)
+      border: none
+      padding-top: 0
 
   img
     width: 300px

@@ -8,16 +8,25 @@
   <div class="body-container row">
     <div class="col-sm-6 form-container">
       <form action="/root/contact_me">
-        <label for="sender_name">Name</label>
-        <input type="text" name="sender_name" id="sender_name">
-        <label for="sender_email">Email</label>
-        <input type="text" name="sender_email" id="sender_email">
-        <label for="body">Message</label>
-        <textarea name="body" cols="30" rows="10" id="body"></textarea>
+        <div class="form-group">
+          <label for="sender_name">Name</label>
+          <input type="text" name="sender_name" id="sender_name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="sender_email">Email</label>
+          <input type="text" name="sender_email" id="sender_email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="body">Message</label>
+          <textarea class="form-control" name="body" cols="30" rows="10" id="body"></textarea>
+        </div>
+        <div class="button-container">
+          <button class="black-link" type="submit">Send Message</button>
+        </div>
       </form>
     </div>
-    <div class="col-sm-6">
-      <div class="contact-info-container">
+    <div class="col-sm-6 contact-info-container">
+      <div class="contact-inner-container">
         <div class="contact-info">
           <p><strong>Ted Whang</strong></p>
           <p>twhang.dev@gmail.com</p>
