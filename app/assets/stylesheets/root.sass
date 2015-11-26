@@ -3,10 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "variables/colors"
-$mobile-width: 480px
-$tablet-width: 768px
-$desktop-width: 992px
-$large-desktop-width: 1200px
+@import "variables/dimensions"
 
 *
   color: black
@@ -54,8 +51,11 @@ $large-desktop-width: 1200px
 
 .body-container
   margin: 5rem auto
-  max-width: 768px
   text-align: justify
+  max-width: 90%
+
+  @media screen and (min-width: $tablet-width)
+    max-width: 768px
 
 .black-overlay
   &::before
