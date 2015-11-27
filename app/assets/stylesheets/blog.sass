@@ -1,11 +1,18 @@
 @import 'variables/colors'
+@import 'variables/dimensions'
 
 .blog-container
 
   .overview-container
-    padding-top: 24px
+    padding-top: 48px
     padding-bottom: 48px
     border-bottom: 1px solid $gray
+
+  .blog-list-container
+    margin: 0 auto
+    width: 90%
+    @media screen and (min-width: $tablet-width)
+      max-width: 768px
 
   .blog-list-header
     padding-top: 48px
@@ -19,6 +26,7 @@
 
     .button-container
       text-align: left
+      margin-bottom: 48px
 
   img
     width: 100%
