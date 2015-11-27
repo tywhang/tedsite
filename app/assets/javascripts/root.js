@@ -3,6 +3,7 @@ $(document).ready(function() {
     var senderName = $('.js-sender-name');
     var senderEmail = $('.js-sender-email');
     var body = $('.js-email-body');
+    debugger;
 
     var isFormValid = true;
     _.each([senderName, senderEmail, body], function(input) {
@@ -26,6 +27,8 @@ $(document).ready(function() {
     }).success(function() {
       jQuery.noConflict();
       $('#contact-me-form').modal('hide');
+    }).fail(function() {
+      debugger;
     });
   });
 });
