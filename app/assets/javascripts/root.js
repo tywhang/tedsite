@@ -33,10 +33,13 @@ $(document).ready(function() {
         sender_email: senderEmail.val(),
         body: body.val()
       }
-    }).success(function() {
-      $('.success').show().delay(3000).fadeOut();
-    }).fail(function() {
-      $('.error').show().delay(3000).fadeOut();
+    }).success(_.bind(function() {
+      senderName.val('');
+      senderEmail.val('');
+      body.val('');
+      $('.success').show().delay(2000).fadeOut();
+    }, this)).fail(function() {
+      $('.error').show().delay(2000).fadeOut();
     });
   });
 });
