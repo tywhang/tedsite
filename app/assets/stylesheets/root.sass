@@ -8,6 +8,18 @@
 *
   color: black
 
+body
+  position: relative
+
+.total-overlay
+  position: absolute
+  background-color: $black
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+
 .icons
   font-size: 24px
 
@@ -18,6 +30,7 @@
   width: 100%
   text-align: center
   text-transform: uppercase
+  z-index: 2
 
   @media screen and (min-width: $desktop-width)
     top: 14rem

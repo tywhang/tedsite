@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $(window).scroll(function() {
     if ($(window).scrollTop() > ($('.header-image').height()) - $('.js-navbar').height() ) {
       $('.js-navbar').addClass('black-background');
@@ -12,7 +13,6 @@ $(document).ready(function() {
     var senderName = $('.js-sender-name');
     var senderEmail = $('.js-sender-email');
     var body = $('.js-email-body');
-    debugger;
 
     var isFormValid = true;
     _.each([senderName, senderEmail, body], function(input) {
@@ -37,7 +37,7 @@ $(document).ready(function() {
       jQuery.noConflict();
       $('#contact-me-form').modal('hide');
     }).fail(function() {
-      debugger;
+
     });
   });
 });
