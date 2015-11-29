@@ -34,10 +34,9 @@ $(document).ready(function() {
         body: body.val()
       }
     }).success(function() {
-      jQuery.noConflict();
-      $('#contact-me-form').modal('hide');
+      $('.success').show().delay(3000).fadeOut();
     }).fail(function() {
-
+      $('.error').show().delay(3000).fadeOut();
     });
   });
 });
