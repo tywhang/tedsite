@@ -25,7 +25,9 @@
         if (index < $('.header-text h2').length) {
           typeText(index);
         } else {
-          $('.total-overlay').fadeTo(1000, 0);
+          $('.total-overlay').fadeTo(1000, 0, function() {
+            $('.total-overlay').remove();
+          });
         }
       }, this)
     });
