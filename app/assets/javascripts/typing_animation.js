@@ -4,7 +4,7 @@
   var pathname = window.location.pathname.slice(1) + "Text";
 
   var headerTexts = {
-    Text: ["Ted Whang", "Full-stack Developer", "UX Designer", "Growth Hacker"],
+    Text: ["Ted Whang", "Full-stack Developer"],
     aboutText: ["About"],
     resumeText: ["Resume"],
     blogText: ["Blog"],
