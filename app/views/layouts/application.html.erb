@@ -14,6 +14,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <div id="main">
+      <%= yield %>
+    </div>
     <% if Rails.env.production? %>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
