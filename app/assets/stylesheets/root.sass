@@ -12,11 +12,38 @@
 
 .container
   border-bottom: 1px solid $black
+  height: 100%
   padding: 0 3rem
   width: 100%
+  min-height: 40rem
 
   &__header
+    margin-bottom: 3rem
     text-align: right
+
+  &__content-row
+    display: flex
+    margin-bottom: 3rem
+
+  &__content-column
+    &--large
+      width: 60%
+
+    &--small
+      width: 40%
+
+  &__image
+    display: block
+    margin: 1rem auto
+
+    &--washington
+      width: 10rem
+
+    &--coding-dojo
+      width: 14rem
+
+    &--svc
+      width: 10rem
 
 .text-container
   background-color: $blue
@@ -40,20 +67,13 @@
 
 .open
   position: relative
-  height: 40rem
 
   &--tinted
     background-color: $blue
-    height: 40rem
     opacity: 0.7
 
 .covered
   background-color: $white
   display: flex
   flex-direction: column
-  height: 40rem
   padding: 3rem
-
-  &__content
-    &-row
-      display: flex
