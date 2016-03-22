@@ -55,7 +55,11 @@
 
   &__header
     margin-bottom: 6rem
+    margin-right: 15%
     text-align: right
+
+    +media-tablet
+      margin-right: 0
 
   &__content-row
     display: flex
@@ -112,11 +116,6 @@
   padding: 1rem 2rem
   position: absolute
 
-  h3
-    margin: 10px 0
-    +media-tablet
-      margin-top: 20px
-
   &__left
     padding: 1rem 1.5rem
     padding-right: 5rem
@@ -131,11 +130,20 @@
       padding-right: 10rem
       bottom: 6rem
 
+    h3
+      margin: 10px 0
+      +media-tablet
+        margin-top: 20px
+
   &__right
     padding-left: 8rem
     text-align: right
     top: 6rem
     right: 6rem
+
+    h3
+      margin-top: 10px
+      margin-bottom: 20px
 
   h6
     margin: 0.2rem 0
