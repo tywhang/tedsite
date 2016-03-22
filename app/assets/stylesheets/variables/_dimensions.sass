@@ -1,4 +1,19 @@
 $mobile-width: 480px
 $tablet-width: 768px
 $desktop-width: 992px
-$large-desktop-width: 1200px
+
+$mobile: "screen and (min-width: #{ $mobile-width })"
+$tablet: "screen and (min-width: #{ $tablet-width })"
+$desktop: "screen and (min-width: #{ $desktop-width })"
+
+@mixin media-mobile
+  @media #{ $mobile }
+    @content
+
+@mixin media-tablet
+  @media #{ $tablet }
+    @content
+
+@mixin media-desktop
+  @media #{ $desktop }
+    @content

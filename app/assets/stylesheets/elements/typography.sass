@@ -1,4 +1,5 @@
 @import 'variables/colors'
+@import "variables/dimensions"
 
 body
   font-family: 'Helvetica Neue', sans-serif
@@ -6,25 +7,40 @@ body
 
 h2
   color: $gray
-  font-size: 3rem
+  font-size: 2rem
   font-weight: 500
+
+  +media-tablet
+    font-size: 3rem
 
 h3
   color: $white
-  font-size: 3rem
+  font-size: 2rem
   font-weight: 500
+
+  +media-tablet
+    font-size: 3rem
 
 h4
   color: $black
   font-size: 2rem
   font-weight: 300
 
+  +media-tablet
+    font-size: 3rem
+
 h5
   color: $gray
   font-size: 1.5rem
   font-weight: 100
 
+  +media-tablet
+    font-size: 2.25rem
+
 h6
   color: $white
-  font-size: 1.5rem
+  font-size: 1rem
   font-weight: 100
+
+  +media-tablet
+    font-size: 1.5rem
