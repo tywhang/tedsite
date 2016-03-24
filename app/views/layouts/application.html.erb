@@ -17,6 +17,7 @@
   </head>
   <body>
     <div id="main">
+      <img class="background-image" src="<%= image_url('building.jpg') %>" alt="building" />
       <%= yield %>
     </div>
     <% if Rails.env.production? %>
