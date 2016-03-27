@@ -61,16 +61,21 @@
 
   &__header
     margin-bottom: 6rem
-    margin-left: 15%
+    margin-left: 8%
+
+    +media-mobile
+      margin-left: 15%
 
     +media-tablet
       margin-left: 8.5%
 
   &__content-row
     display: flex
-    margin-left: 15%
-    flex-direction: column
+    margin-left: 5%
     margin-bottom: 3rem
+
+    +media-mobile
+      margin-left: 10%
 
     +media-tablet
       align-items: flex-start
@@ -79,38 +84,44 @@
 
   &__content-column
     &--large
-      width: 100%
+      width: 70%
       +media-tablet
         width: 60%
 
     &--small
-      width: 100%
+      width: 30%
       +media-tablet
         width: 40%
 
   &__image
     display: block
-    margin: 1rem 0
-    +media-tablet
-      margin: 1.5rem auto
+    margin: 1.5rem auto
 
     &--mazlo
-      width: 12rem
-      +media-tablet
-        width: 14rem
+      width: 8rem
+      +media-mobile
+        width: 10rem
+        +media-tablet
+          width: 14rem
 
     &--washington
-      width: 8rem
+      width: 4rem
+      +media-mobile
+        width: 6rem
       +media-tablet
         width: 10rem
 
     &--coding-dojo
-      width: 12rem
+      width: 8rem
+      +media-mobile
+        width: 10rem
       +media-tablet
         width: 14rem
 
     &--svc
-      width: 8rem
+      width: 4rem
+      +media-mobile
+        width: 6rem
       +media-tablet
         width: 10rem
 
