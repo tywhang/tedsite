@@ -53,11 +53,11 @@
   
   +media-mobile
     padding: 8rem 3rem
-    min-height: 40rem
+    min-height: 35rem
 
   +media-tablet
     padding: 12rem 6rem
-    min-height: 50rem
+    min-height: 40rem
 
   &__header
     margin-bottom: 6rem
@@ -68,6 +68,15 @@
 
     +media-tablet
       margin-left: 8.5%
+
+  &__text
+    align-self: baseline
+    margin-bottom: 0
+
+    h1
+      margin-bottom: 5%
+      +media-tablet
+        margin-bottom: 7%
 
   &__content-row
     display: flex
@@ -81,6 +90,15 @@
       align-items: flex-start
       margin: 0
       flex-direction: row
+
+    &--contact
+      margin-left: 8%
+
+    +media-mobile
+      margin-left: 15%
+
+    +media-tablet
+      margin-left: 8.5%
 
   &__content-column
     &--large
@@ -167,7 +185,11 @@
 .open
   &--tinted
     background-color: $blue
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
     opacity: 0.7
+    padding-bottom: 6rem
 
 .covered
   background-color: $white
