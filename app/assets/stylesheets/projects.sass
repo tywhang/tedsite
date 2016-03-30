@@ -1,0 +1,33 @@
+.projects
+  bottom: 0
+  left: 0
+  right: 0
+  display: flex
+  position: absolute
+  width: 100%
+
+  &__item
+    align-items: center
+    background: $black
+    border-left: 1px solid $white
+    border-right: 1px solid $white
+    display: flex
+    height: 9rem
+    justify-content: center
+    opacity: 0.7
+    width: 33.3333%
+
+    +media-mobile
+      height: 14rem
+
+  &__image
+    max-width: 70%
+
+    &--ralli
+      width: 140px
+
+    &--mazlo
+      width: 160px
+
+    &--muzik
+      width: 200px
