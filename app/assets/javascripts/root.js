@@ -7,4 +7,12 @@ $(document).ready(function() {
       $('.js-navbar').removeClass('black-background');
     }
   });
+
+  $('.js-show-overlay--mazlo').click(function() {
+    $('#main').addClass('mazlo-overlay-open');
+  });
+
+  $('.js-close-overlay').click(function() {
+    $('#main').removeClass('mazlo-overlay-open')
+  });
 });

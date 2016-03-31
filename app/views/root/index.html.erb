@@ -48,9 +48,9 @@
     <div class="projects__item">
       <img src="<%= image_url('goralli.png') %>" alt="Ralli" class="projects__image projects__image--ralli">
     </div>
-    <div class="projects__item">
+    <button class="projects__item js-show-overlay--mazlo">
       <img src="<%= image_url('mazlo_light.png') %>" alt="Mazlo" class="projects__image projects__image--mazlo">
-    </div>
+    </button>
     <div class="projects__item">
       <img src="<%= image_url('muzik_chat.png') %>" alt="Muzik Chat" class="projects__image projects__image--muzik">
     </div>
@@ -110,6 +110,7 @@
 
 <div class="overlay overlay--mazlo">
   <div class="overlay__content">
+    <img src="<%= image_url('close.svg') %>" alt="" class="overlay__close js-close-overlay">
     <div class="overlay__image">
       <img src="<%= image_url('iphone.png') %>" alt="">
     </div>
