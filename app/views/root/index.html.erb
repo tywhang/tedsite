@@ -45,15 +45,15 @@
     <h3>Projects</h3>
   </div>
   <div class="projects">
-    <div class="projects__item">
+    <button class="projects__item js-show-overlay--ralli">
       <img src="<%= image_url('goralli.png') %>" alt="Ralli" class="projects__image projects__image--ralli">
-    </div>
+    </button>
     <button class="projects__item js-show-overlay--mazlo">
       <img src="<%= image_url('mazlo_light.png') %>" alt="Mazlo" class="projects__image projects__image--mazlo">
     </button>
-    <div class="projects__item">
+    <button class="projects__item js-show-overlay--muzik">
       <img src="<%= image_url('muzik_chat.png') %>" alt="Muzik Chat" class="projects__image projects__image--muzik">
-    </div>
+    </button>
   </div>
   <i class="triangle triangle__top triangle__top--black"></i>
 </div>
@@ -126,8 +126,57 @@
         <h6>HTML/CSS/Javascript</h6>
         <h6>Backbone/Marionette</h6>
         <h6>Ruby on Rails 5</h6>
+        <h6>ActionCable</h6>
         <h6>Turbolinks-iOS</h6>
         <h6>PostgreSQL/Redis</h6>
+        <h6>Heroku</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay overlay--ralli">
+  <div class="overlay__content">
+    <img src="<%= image_url('close.svg') %>" alt="" class="overlay__close js-close-overlay">
+    <div class="overlay__image">
+      <img src="<%= image_url('iphone.png') %>" alt="">
+    </div>
+    <div class="overlay__text">
+      <img class="overlay__logo overlay__logo--ralli" src="<%= image_url('goralli_black.png') %>" alt="">
+      <div class="overlay__details">
+        <h6>Project: Ralli App</h6>
+        <h6>Role: Front-end Developer</h6>
+        <h6>Website: ralli.herokuapp.com</h6>
+      </div>
+      <h6 class="overlay__technologies-header">Technologies Used:</h6>
+      <div class="overlay__technologies">
+        <h6>HTML/CSS/Javascript</h6>
+        <h6>Ruby on Rails 5</h6>
+        <h6>ReactJS/Rails-React</h6>
+        <h6>Heroku</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay overlay--muzik">
+  <div class="overlay__content">
+    <img src="<%= image_url('close.svg') %>" alt="" class="overlay__close js-close-overlay">
+    <div class="overlay__image">
+      <img src="<%= image_url('iphone.png') %>" alt="">
+    </div>
+    <div class="overlay__text">
+      <img class="overlay__logo overlay__logo--muzik" src="<%= image_url('muzik_chat_black.png') %>" alt="">
+      <div class="overlay__details">
+        <h6>Project: Muzik Chat (Solo Project)</h6>
+        <h6>Role: Designer and Developer</h6>
+        <h6>Website: muzikchat.com</h6>
+      </div>
+      <h6 class="overlay__technologies-header">Technologies Used:</h6>
+      <div class="overlay__technologies">
+        <h6>HTML/CSS/Javascript</h6>
+        <h6>Ruby on Rails 5</h6>
+        <h6>ActionCable</h6>
         <h6>Heroku</h6>
       </div>
     </div>

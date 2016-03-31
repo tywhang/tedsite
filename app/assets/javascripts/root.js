@@ -12,7 +12,15 @@ $(document).ready(function() {
     $('#main').addClass('mazlo-overlay-open');
   });
 
+  $('.js-show-overlay--ralli').click(function() {
+    $('#main').addClass('ralli-overlay-open');
+  });
+
+  $('.js-show-overlay--muzik').click(function() {
+    $('#main').addClass('muzik-overlay-open');
+  });
+
   $('.js-close-overlay').click(function() {
-    $('#main').removeClass('mazlo-overlay-open')
+    $('#main').removeClass('mazlo-overlay-open ralli-overlay-open muzik-overlay-open')
   });
 });
