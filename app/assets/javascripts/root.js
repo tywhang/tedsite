@@ -20,7 +20,11 @@ $(document).ready(function() {
     $('#main').addClass('muzik-overlay-open');
   });
 
-  $('.js-close-overlay').click(function() {
+  $('.js-close-overlay, .overlay').click(function() {
     $('#main').removeClass('mazlo-overlay-open ralli-overlay-open muzik-overlay-open')
+  });
+
+  $('.overlay__content').click(function(e) {
+    e.stopPropagation();
   });
 });
